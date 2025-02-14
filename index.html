@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&family=Square+Peg&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentine's Day Babe</h1>
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="options" class="options-container"></div>
+        </div>        
+        <div id="hearts-container"></div>
+        <div id="final-message" style="display: none;">
+            <!-- <h2>You're the love of my life! 💖</h2>
+            <p>Thank you for being mine forever and always...</p> -->
+        </div>
+    </div>
+
+    <div id="hearts-tracker">
+        <span class="heart-tracker">🤍</span>
+        <span class="heart-tracker">🤍</span>
+        <span class="heart-tracker">🤍</span>
+        <span class="heart-tracker">🤍</span>
+        <span class="heart-tracker">🤍</span>
+        <span class="heart-tracker">🤍</span>
+    </div>
+
+    <div id="error-dialog" class="hidden">
+        <div class="dialog-content">
+            <p id="error-message"></p>
+            <button onclick="hideError()">Again 😒</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
