@@ -1,0 +1,161 @@
+body {
+    background-color: #ffe6f2;
+    font-family: 'Square Peg', cursive; /* Default font for body */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #ff0066;
+    font-size: 2.5em;
+}
+
+/* Questions */
+#question {
+    font-family: 'Square Peg', cursive;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+/* Options */
+.option-btn {
+    font-family: 'Square Peg', cursive;
+    font-size: 2rem;
+    background: #ff99cc;
+    border: 2px solid #ff0066;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Final Message Text */
+#final-message p {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+/* Rest of your existing CSS remains same below */
+#question-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 0, 102, 0.3);
+    margin: 20px 0;
+}
+
+button {
+    background-color: #ff0066;
+    color: white;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.heart {
+    position: absolute;
+    color: #ff0066;
+    font-size: 20px;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100px); opacity: 0; }
+}
+
+#final-message {
+    color: #ff0066;
+    font-size: 0.5rem;
+}
+
+#hearts-tracker {
+    font-size: 2em;
+    margin: 20px 0;
+    animation: pulse 2s infinite;
+}
+
+/* ... rest of your existing CSS rules remain unchanged ... */
+
+.final-hearts {
+    font-size: 3em;
+    margin: 20px 0;
+    animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    15% { transform: scale(1.3); }
+    30% { transform: scale(1); }
+    45% { transform: scale(1.15); }
+    60% { transform: scale(1); }
+}
+
+.options-container {
+    display: grid;
+    gap: 20px; /* Increased from 10px */
+    margin: 20px 0;
+}
+
+.option-btn {
+    background: #ff99cc;
+    border: 2px solid #ff0066;
+    border-radius: 25px;
+    padding: 10px 15px; /* Increased padding */
+    font-family: 'Square Peg', cursive;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 5px; /* Added external spacing */
+}
+
+#error-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top */
+    font-family: 'Patrick Hand', cursive !important;
+}
+
+.dialog-content {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255,0,102,0.5);
+    max-width: 300px;
+}
+
+#error-message {
+    color: #ff0066;
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+
+.dialog-content button {
+    background: #ff0066;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-size: 1.5rem !important;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
